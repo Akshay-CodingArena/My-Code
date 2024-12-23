@@ -1,0 +1,28 @@
+@media screen and (max-width: 767px) {
+  .get-queto,
+  .book-queto {
+    padding: 7px 17px;
+    font-size: 14px;
+  }
+  .get-queto {
+    margin-left: 0;
+    width: auto;
+  }
+  .book-queto {
+    width: auto;
+  }
+  .banner h1 {
+    font-size: 20px;
+  }
+  .banner h2 {
+    line-height: 48px;
+    font-size: 40px;
+  }
+  .banner {
+    padding-top: 25px;
+  }
+  .banner .readmore a {
+    padding: 16px 16px;
+    font-size: 18px;
+  }
+}

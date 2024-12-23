@@ -1,0 +1,73 @@
+export const USER_BOOKING_REQUEST = "USER_REGISTER_REQUEST";
+export const USER_BOOKING_SUCCESS = "USER_REGISTER_SUCCESS";
+export const USER_BOOKING_FAIL = "USER_REGISTER_FAIL";
+export const USER_BOOK_RESET = "USER_BOOK_RESET";
+
+export const USER_REGISTER_REQUEST = "USER_REGISTER_REQUEST";
+export const USER_REGISTER_SUCCESS = "USER_REGISTER_SUCCESS";
+export const USER_REGISTER_FAIL = "USER_REGISTER_FAIL";
+
+export const USER_UPGRADE_REQUEST = "USER_UPGRADE_REQUEST";
+export const USER_UPGRADE_SUCCESS = "USER_UPGRADE_SUCCESS";
+export const USER_UPGRADE_FAIL = "USER_UPGRADE_FAIL";
+export const USER_UPGRADE_RESET = "USER_UPGRADE_RESET";
+
+export const USER_SIGNIN_REQUEST = "USER_SIGNIN_REQUEST";
+export const USER_SIGNIN_SUCCESS = "USER_SIGNIN_SUCCESS";
+export const USER_SIGNIN_FAIL = "USER_SIGNIN_FAIL";
+
+export const USER_SIGNOUT = "USER_SIGNOUT";
+
+export const USER_DETAILS_REQUEST = "USER_DETAILS_REQUEST";
+export const USER_DETAILS_SUCCESS = "USER_DETAILS_SUCCESS";
+export const USER_DETAILS_FAIL = "USER_DETAILS_FAIL";
+export const USER_DETAILS_RESET = "USER_DETAILS_RESET";
+
+export const USER_LIST_REQUEST = "USER_LIST_REQUEST";
+export const USER_LIST_SUCCESS = "USER_LIST_SUCCESS";
+export const USER_LIST_FAIL = "USER_LIST_FAIL";
+
+export const USER_TOPSELLERS_LIST_REQUEST = "USER_TOPSELLERS_LIST_REQUEST";
+export const USER_TOPSELLERS_LIST_SUCCESS = "USER_TOPSELLERS_LIST_SUCCESS";
+export const USER_TOPSELLERS_LIST_FAIL = "USER_TOPSELLERS_LIST_FAIL";
+
+export const USER_UPDATE_PROFILE_REQUEST = "USER_UPDATE_PROFILE_REQUEST";
+export const USER_UPDATE_PROFILE_SUCCESS = "USER_UPDATE_PROFILE_SUCCESS";
+export const USER_UPDATE_PROFILE_FAIL = "USER_UPDATE_PROFILE_FAIL";
+export const USER_UPDATE_PROFILE_RESET = "USER_UPDATE_PROFILE_RESET";
+
+export const USER_UPDATE_REQUEST = "USER_UPDATE_REQUEST";
+export const USER_UPDATE_SUCCESS = "USER_UPDATE_SUCCESS";
+export const USER_UPDATE_FAIL = "USER_UPDATE_FAIL";
+export const USER_UPDATE_RESET = "USER_UPDATE_RESET";
+
+export const USER_DELETE_REQUEST = "USER_DELETE_REQUEST";
+export const USER_DELETE_SUCCESS = "USER_DELETE_SUCCESS";
+export const USER_DELETE_FAIL = "USER_DELETE_FAIL";
+export const USER_DELETE_RESET = "USER_DELETE_RESET";
+
+export const USER_ADDRESS_MAP_CONFIRM = "USER_ADDRESS_MAP_CONFIRM";
+
+export const USER_STATE_LIST_REQUEST = "USER_STATE_LIST_REQUEST";
+export const USER_STATE_LIST_SUCCESS = "USER_STATE_LIST_SUCCESS";
+export const USER_STATE_LIST_FAIL = "USER_STATE_LIST_FAIL";
+
+export const EDUCATION_LEVEL_OPTIONS = [
+  { Option: "High School", Value: "High School" },
+  { Option: "Bachelor's Degree", Value: `Bachelors Degree` },
+  { Option: "Master's Degree", Value: "Masters Degree" },
+  { Option: "Doctorate", Value: "Doctorate" },
+  { Option: "Other", Value: "Other" },
+];
+
+export const TOTAL_TURNOVER = [
+  { Option: "50 lac to 1 cr", Value: "50 lac to 1 cr" },
+  { Option: "1 cr to 5 cr", Value: "1 cr to 5 cr" },
+  { Option: "5 cr +", Value: "5 cr +" },
+];
+
+export const INVEST_AMOUNT = [
+  { Option: "Min 24 Lacs", Value: "Min 24 Lacs" },
+  { Option: "25-30 Lacs", Value: "25-30 Lacs" },
+  { Option: "30–40 Lacs", Value: "30–40 Lacs" },
+];

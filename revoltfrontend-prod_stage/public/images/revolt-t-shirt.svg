@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155.17" height="24.653" viewBox="0 0 155.17 24.653">
+  <g id="Group_81" data-name="Group 81" transform="translate(-181.556 114)">
+    <g id="Group_65" data-name="Group 65" transform="translate(181.556 -114)">
+      <path id="Path_1" data-name="Path 1" d="M28.6,307.066a1.7,1.7,0,0,0-.038.275,1.324,1.324,0,0,0,.245.727,2.368,2.368,0,0,1,.453,1.454,3.491,3.491,0,0,1-.132.943l-2.152,8.39H20.259L21.5,314a3.87,3.87,0,0,0,.113-.9,2.561,2.561,0,0,0-.472-1.513,2.352,2.352,0,0,0-2.077-1.022H8.874L6.74,318.856H0l3.059-11.888a4.648,4.648,0,0,1,1.586-2.417,4.035,4.035,0,0,1,2.587-1H24.639l.533-1.9H4.66l1.419-6.373H29.755a2.367,2.367,0,0,1,2.077,1,2.633,2.633,0,0,1,.453,1.513,3.939,3.939,0,0,1-.113.924l-1.284,4.952a4.592,4.592,0,0,1-1.567,2.4,2.075,2.075,0,0,0-.717,1" transform="translate(0 -295.277)" fill="#fff" fill-rule="evenodd"/>
+      <g id="Group_64" data-name="Group 64" transform="translate(66.269 0)">
+        <path id="Path_2" data-name="Path 2" d="M495.32,295.278l-13.046,21.359a4.881,4.881,0,0,1-1.624,1.611,3.815,3.815,0,0,1-2.039.609h-5.72a2.409,2.409,0,0,1-1.7-.609,2.294,2.294,0,0,1-.793-1.611l-2.058-21.359h7.174l1.548,15.9a.5.5,0,0,0,.567.491.877.877,0,0,0,.793-.491l9.723-15.9Z" transform="translate(-468.34 -295.278)" fill="#fff" fill-rule="evenodd"/>
+      </g>
+      <g id="Group_63" data-name="Group 63" transform="translate(30.869 0)">
+        <path id="Path_5" data-name="Path 5" d="M230.435,351.159l-1.662,6.434h23.166l1.662-6.434Z" transform="translate(-227.331 -342.622)" fill="#fff" fill-rule="evenodd"/>
+        <path id="Path_6" data-name="Path 6" d="M271.571,295.278h-26.98l-1.709,6.613h26.98Z" transform="translate(-239.286 -295.278)" fill="#fff" fill-rule="evenodd"/>
+        <path id="Path_7" data-name="Path 7" d="M219.472,409.1a3.482,3.482,0,0,0-.132.943,2.417,2.417,0,0,0,.472,1.493,2.351,2.351,0,0,0,2.077,1.022h23.657l1.727-6.684H220.294Z" transform="translate(-219.34 -388.975)" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <text id="Tshirt" transform="translate(272.725 -93.347)" fill="#fff" font-size="17" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">TSHIRT</tspan></text>
+  </g>
+</svg>

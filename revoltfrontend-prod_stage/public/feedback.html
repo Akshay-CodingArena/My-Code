@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Revolt Customer Feedback</title>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    body {
+      background-color: #fff;
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+    input[type='radio'] {
+      accent-color: #ffcd39;
+      height: 15px;
+      width: 15px;
+    }
+
+    #myForm {
+      display: flex;
+      margin: 20px 0px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #error-message {
+      color: red;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+
+    #subHeading {
+      font-size: 16px;
+      font-weight: 670;
+      text-transform: uppercase;
+    }
+
+    .mainSection {
+      background-image: url(Banner_Images.jpg);
+      height: 100%;
+      min-height: 100vh;
+      position: relative;
+      /* padding-bottom: 40px; */
+    }
+
+    .mainSection::after {
+      content: " ";
+      background: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+    }
+
+  
+
+    header {
+      position: relative;
+      z-index: 999;
+    }
+nav{     position: absolute;
+    top: 10px;
+    right: 10px;  z-index: 9999;}
+    nav img{max-width: 100px; height: auto;}
+    /* #header,
+    #questioncontainer,
+    #answerkeycontainer {
+      margin-top: 15vh;
+    } */
+
+    header {
+      display: block;
+      position: relative;
+      z-index: 999;
+      color: #f2f2f2;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+    }
+
+    #header,
+    #questioncontainer,
+    #answerkeycontainer {
+      margin-top: 15vh;
+    }
+
+    header {
+      display: block;
+      position: relative;
+      z-index: 999;
+      color: #f2f2f2;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+    }
+
+    header .desc h1 {
+      font-size: 22px;
+      padding: 0px;
+      margin: 0px;
+      font-weight: 600;
+      color: #f2f2f2;
+      margin-bottom: 20px;
+    }
+
+    header .desc p {
+      padding: 0px;
+      font-size: 13px;
+      line-height: 20px;
+      margin: 0px 0px 7px;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .questionContainer {
+      display: block;
+      position: relative;
+      z-index: 999;
+      color: #f2f2f2;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+    }
+
+    .questionContainer h5 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+ 
+
+    .answerKeyContainer {
+      display: none;
+      min-height: 150px;
+      position: relative;
+      z-index: 999;
+      color: #f2f2f2;
+      padding: 100px 40px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .answerKeyContainer h1 {
+      font-size: 21px;
+      max-width: 390px;
+      margin: auto;
+      text-align: center;
+      line-height: 30px;
+    }
+
+    /* .answers {
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+  } */
+    .individualanswer {
+      padding: 15px;
+    }
+
+    button.btn {
+      margin: 10px 0px;
+      width: 200px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    label {
+      margin-left: 5px;
+    }
+
+    textarea {
+      border: 1px solid #ccc;
+      padding: 10px 10px 5px;
+      border-radius: 5px;
+      resize: none;
+      max-height: 80px;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    textarea:hover,
+    textarea:focus {
+      outline: none;
+    }
+
+    #myForm .radio span {
+      display: block;
+      text-align: center;
+      font-weight: 600;
+      margin: 5px 0px;
+    }
+    .changeLanguageBlock{ display: block; margin-bottom: 10px;}
+    .changeLanguageBlock span{ font-size: 14px;}
+.changeLanguageBlock,
+.changeLanguageBlock * {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	box-sizing: border-box;
+}
+.changeLanguageBlock {
+	position: relative;
+
+}
+.changeLanguageBlock select {
+  font-size: 1rem;
+    font-weight: normal;
+    max-width: 100%;
+    padding: 4px 24px 4px 10px;
+    border: none;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 110px;
+    border-radius: 5px;
+}
+.changeLanguageBlock select:active, .changeLanguageBlock select:focus {
+	outline: none;
+	box-shadow: none;
+}
+.changeLanguageBlock:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	width: 0;
+	height: 0;
+	margin-top: -2px;
+	border-top: 5px solid #aaa;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+    @media only screen and (max-width: 768px) {
+      .mainSection {
+        background-image: url(mobile-banner.jpeg);
+        /* height: 100%; */
+        background-size: cover;
+        background-position: bottom;
+      }
+      header{padding: 30px 15px;}
+      header .desc h1{font-size: 20px; margin-top: 20px;}
+      /* #header,
+      #questioncontainer,
+      #answerkeycontainer {
+        margin-top: 5vh;
+      } */
+
+      header .desc p,#ratingBar {
+        font-size: 12px;
+      }
+
+      .questionContainer {
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .questionContainer h5 {
+        font-size: 16px;
+      }
+
+      button.btn {
+        width: 140px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--HEADING-->
+
+  <section class="mainSection d-flex justify-content-center align-items-center ">
+
+    <!--HEADING-->
+
+   
+      <nav class="text-end"> <img src="logo.svg" width="100" height="" alt="" /></nav>
+
+   
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <header id="header" style="display: block;">
+            <div class="changeLanguageBlock text-end">
+              <span id="changeLanguageSpan" style="margin-right: 10px;">Choose Language </span><select id="languageSelector" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+                <option value="mr">मराठी</option>
+              </select>
+            </div>
+
+
+
+            <div class="desc">
+
+              <h1 id="firstSectionHeading" class="text-center">Revolt Customer Feedback Survey</h1>
+
+              <p><span id="firstSectionSubHeading">Dear RV1 Owner,</span></p>
+
+              <p id="firstSectionP1">
+                Thank you for purchasing the new Revolt RV1! We value your feedback
+
+                and would love to hear about your experience with the bike. Your
+
+                insights will help us improve and deliver a better experience for
+
+                all our customers.</p>
+
+              <p id="firstSectionP2">Please take a few minutes to complete this survey. Your responses
+
+                will remain confidential.
+              </p>
+
+
+              <div class="text-center">
+                <button id="firstSectionSubmitButton" onclick="switchDiv('questioncontainer', 'header')"
+                  class="btn btn-warning">Proceed</button>
+              </div>
+
+            </div>
+          </header>
+          <div id="questioncontainer" class="questionContainer" style="display: none;">
+
+
+            <h4 id="mainTitle"></h4>
+
+            <h5 id="question"></h5>
+            <h6 id="subHeading"></h6>
+
+            <form id="myForm"></form>
+
+            <div id="error-message" class="hidden">Please select an option</div>
+            <button type="button" id="submitbutton" class="btn btn-warning" onclick="checkAnswer()"
+              style="display: inline-block;cursor: pointer;">
+              Next
+            </button>
+            <div style="display: flex;justify-content: end;font-weight: 600;" id="progressBar"></div>
+            <div id="ratingBar">Note: Rate your experience on a scale of 1 to 5, with 1 being the lowest and 5 the
+              highest.</div>
+            <button type="button" id="nextquestionbutton" class="btn btn-success" onclick="nextQuestion()"
+              style="display: none;cursor: pointer;">
+              Next
+            </button>
+          </div>
+          <div class="answerKeyContainer " id="answerkeycontainer">
+            <h1 id="thankYouText"></h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+  <!-- MID-SECTION  -->
+
+
+  <!--     ANSWERSECTION-->
+
+  <script>
+
+
+
+    //Next
+    // अगला
+    // पुढील
+
+    //alert("hii");
+
+    let questions = [];
+
+    var start = 0;
+
+    //INITIAL SCORE//
+
+    let userAnswers = [];
+    var correctAnswer = "";
+    let language = "en";
+
+    let noteText={
+      "en": "Note: Rate your experience on a scale of 1 to 5, with 1 being the lowest and 5 the highest.",
+      "hi":"नोट: अपने अनुभव को 1 से 5 के पैमाने पर रैटिंग करें, जहां 1 सबसे कम और 5 सबसे अधिक है।",
+      "mr":"नोट: आपल्या अनुभवाचे मूल्यांकन 1 ते 5 च्या प्रमाणात करा, जिथे 1 सर्वात कमी आणि 5 सर्वात जास्त आहे."
+    }
+
+    let labelChangeLanguage = {
+      "en": "Choose Language",
+      "hi":"भाषा चुनें",
+      "mr":"भाषा निवडा"
+    }
+
+    let startSectionHeading = {
+      "en": "Revolt Customer Feedback Survey",
+      "hi": "रिवोल्ट ग्राहक फीडबैक सर्वे",
+      "mr": "रिवोल्ट ग्राहक फीडबैक सर्वेक्षण"
+    }
+
+    let startSectionSubheading = {
+      "en": "Dear RV1 Owner",
+      "hi": "प्रिय RV1 ग्राहक",
+      "mr": "प्रिय RV1 ग्राहक"
+    }
+
+    let startSectionP1 = {
+      "en": "Thank you for purchasing the new Revolt RV1! We value your feedback and would love to hear about your experience with the bike. Your insights will help us improve and deliver a better experience for all our customers.",
+      "hi": "RV1 खरीदने के लिए धन्यवाद! हम आपके फीडबैक को महत्व देते हैं और बाइक के साथ आपके अनुभव के बारे में जानना चाहते हैं। आपके विचार हमें सुधार करने और सभी ग्राहकों के लिए बेहतर अनुभव प्रदान करने में मदद करेंगे।",
+      "mr": "नवीन रिवोल्ट RV1 खरेदी केल्याबद्दल धन्यवाद! आम्ही तुमच्या फीडबॅकला महत्त्व देतो आणि बाईकसह तुमच्या अनुभवाबद्दल ऐकायला इच्छुक आहोत. तुमच्या माहितीमुळे आम्हाला आमची सेवा सुधारण्यासाठी आणि सर्व ग्राहकांसाठी चांगला अनुभव देण्यासाठी मदत होईल."
+    }
+    let startSectionP2 = {
+      "en": "Please take a few minutes to complete this survey. Your responses will remain confidential.",
+      "hi": "कृपया इस सर्वेक्षण को पूरा करने के लिए कुछ मिनट का समय निकालें। आपका जवाब गोपनीय रहेगा।",
+      "mr": "कृपया या सर्वेक्षणात सहभागी होण्यासाठी काही मिनिटे घ्या. तुमच्या प्रतिक्रिया गोपनीय राहतील."
+    }
+
+    let ObjNextButtonText = {
+      "en": "Next",
+      "hi": "अगला",
+      "mr": "पुढील"
+    }
+
+    let ObjThankYouText = {
+      "en": "Thank you for your feedback! We appreciate your time.",
+      "hi": "आपकी सुझाव के लिए धन्यवाद! हम आपके समय की सराहना करते हैं।",
+      "mr": "आपल्या अभिप्रायासाठी धन्यवाद! आम्ही तुमच्या वेळेची कदर करतो."
+    }
+
+    let ErrorMessageObj = {
+      "en": "Please fill the details",
+      "hi": "कृपया विवरण भरें",
+      "mr": "कृपया माहिती भरा."
+    }
+
+    let QuestionsWithLanguage = {
+      "en":
+        [
+          {
+            question: "Please rate your experience with Revolt RV1 Motorcycle.",
+            subheading: ""
+          },
+          {
+            question: "Please rate your experience with buying journey of Revolt.",
+            subheading: ""
+          },
+          {
+            question: "Please rate the performance of Revolt RV1 in the following areas.",
+            subheading: "A. Pick-up & Speed"
+          },
+          {
+            question: "Please rate the performance of Revolt RV1 in the following areas.",
+            subheading: "B. Ease of handling & turn"
+          },
+          {
+            question: "Please rate the performance of Revolt RV1 in the following areas.",
+            subheading: "C.  Kilometer range in full charge"
+          },
+          {
+            question: "Please rate the performance of Revolt RV1 in the following areas.",
+            subheading: "D. Power & load carrying capacity"
+          },
+          {
+            question: "Please rate the performance of Revolt RV1 in the following areas.",
+            subheading: "E. Overall Riding Experience"
+          },
+          {
+            question: "Please rate  the design and features aspects of Revolt RV1.",
+            subheading: "A. Build quality and sturdiness"
+          },
+          {
+            question: "Please rate  the design and features aspects of Revolt RV1.",
+            subheading: "B. The look and style of the bike"
+          },
+
+          {
+            question: "Please rate  the design and features aspects of Revolt RV1.",
+            subheading: "C. Comfort of the seat & riding position"
+          },
+          {
+            question: "Would you recommend Revolt RV1 to your friends or family?",
+            subheading: ""
+          },
+          {
+            question: "What you like most about Revolt RV1?",
+            subheading: ""
+          },
+          {
+            question: "Suggestions to improve Revolt RV1",
+            subheading: ""
+          }
+        ],
+      "hi":
+        [
+          {
+            question: "कृपया रिवोल्ट RV1 मोटरसाइकिल के साथ अपने अनुभव को रैटिंग करें।",
+            subheading: ""
+          },
+          {
+            question: "कृपया रिवोल्ट खरीदने के अपने अनुभव को रैटिंग करें।",
+            subheading: ""
+          },
+          {
+            question: "कृपया रिवोल्ट RV1 की प्रदर्शन को निम्नलिखित क्षेत्रों में रैटिंग करें।",
+            subheading: "A. पिक-अप और गति"
+          },
+          {
+            question: "कृपया रिवोल्ट RV1 की प्रदर्शन को निम्नलिखित क्षेत्रों में रैटिंग करें।",
+            subheading: "B. आसानी से संभालना और मोड़ना"
+          },
+          {
+            question: "कृपया रिवोल्ट RV1 की प्रदर्शन को निम्नलिखित क्षेत्रों में रैटिंग करें।",
+            subheading: "C. फुल चार्ज में किलोमीटर रेंज"
+          },
+          {
+            question: "कृपया रिवोल्ट RV1 की प्रदर्शन को निम्नलिखित क्षेत्रों में रैटिंग करें।",
+            subheading: "D. पावर और भार वहन क्षमता"
+          },
+          {
+            question: "कृपया रिवोल्ट RV1 की प्रदर्शन को निम्नलिखित क्षेत्रों में रैटिंग करें।",
+            subheading: "E. कुल मिलाकर सवारी का अनुभव"
+          },
+          {
+            question: "कृपया रिवोल्ट RV1 के डिज़ाइन और फीचर्स को रैटिंग करें।",
+            subheading: "A. निर्माण गुणवत्ता और मजबूती"
+          },
+
+          {
+            question: "कृपया रिवोल्ट RV1 के डिज़ाइन और फीचर्स  को रैटिंग करें।",
+            subheading: "B. बाइक का लुक और स्टाइल"
+          },
+
+          {
+            question: "कृपया रिवोल्ट RV1 के डिज़ाइन और फीचर्स को रैटिंग करें।",
+            subheading: "C. सीट की आरामदायकता और राइडिंग पोजिशन"
+          },
+          {
+            question: "क्या आप रिवोल्ट RV1 को अपने दोस्तों या परिवार के सदस्यों को सिफारिश करेंगे?",
+            subheading: ""
+          },
+          {
+            question: "आपको रिवोल्ट RV1 में सबसे अधिक क्या पसंद है?",
+            subheading: ""
+          },
+          {
+            question: "रिवोल्ट RV1 में सुधार के सुझाव",
+            subheading: ""
+          }
+        ],
+      "mr": [
+        {
+          question: "कृपया रिवोल्ट RV1 मोटरसायकलच्या अनुभवाला रैटिंग करा.",
+          subheading: ""
+        },
+        {
+          question: "कृपया रिवोल्ट खरेदी प्रक्रियेसोबतचा अनुभव रैटिंग करा.",
+          subheading: ""
+        },
+        {
+          question: "कृपया खालील क्षेत्रांमध्ये रिवोल्ट RV1 च्या कामगिरीला रैटिंग करा.",
+          subheading: "A. पिक-अप आणि गती"
+        },
+        {
+          question: "कृपया खालील क्षेत्रांमध्ये रिवोल्ट RV1 च्या कामगिरीला रैटिंग करा.",
+          subheading: "B. हाताळण्याची सोय आणि वळणे"
+        },
+        {
+          question: "कृपया खालील क्षेत्रांमध्ये रिवोल्ट RV1 च्या कामगिरीला रैटिंग करा.",
+          subheading: "C. पूर्ण चार्जमध्ये किलोमीटर श्रेणी"
+        },
+        {
+          question: "कृपया खालील क्षेत्रांमध्ये रिवोल्ट RV1 च्या कामगिरीला रैटिंग करा.",
+          subheading: "D. पॉवर आणि वजन वाहून नेण्याची क्षमता"
+        },
+        {
+          question: "कृपया खालील क्षेत्रांमध्ये रिवोल्ट RV1 च्या कामगिरीला रैटिंग करा.",
+          subheading: "E. एकूणच रायडिंग अनुभव"
+        },
+        {
+          question: "कृपया रिवोल्ट RV1 च्या डिझाइन आणि वैशिष्ट्यांचे मूल्यांकन करा.",
+          subheading: "A. बांधणी गुणवत्ता आणि मजबुती"
+        },
+        {
+          question: "कृपया रिवोल्ट RV1 च्या डिझाइन आणि वैशिष्ट्यांचे मूल्यांकन करा.",
+          subheading: "B. बाईकचे लूक आणि स्टाइल"
+        },
+
+        {
+          question: "कृपया रिवोल्ट RV1 च्या डिझाइन आणि वैशिष्ट्यांचे मूल्यांकन करा.",
+          subheading: "C. सीटची आरामदायकता आणि रायडिंग पोझिशन"
+        },
+        {
+          question: "तुम्ही रिवोल्ट RV1 ला तुमच्या मित्रांना किंवा कुटुंबातील सदस्यांना शिफारस कराल का?",
+          subheading: ""
+        },
+        {
+          question: "तुम्हाला रिवोल्ट RV1 मध्ये सर्वाधिक काय आवडते?",
+          subheading: ""
+        },
+        {
+          question: "रिवोल्ट RV1 सुधारण्याचे सुचवणी",
+          subheading: ""
+        }
+      ],
+    }
+
+    const svgContentEmpty =
+      "<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' fill='white' version='1.1' viewBox='0 0 32 32' ><path class='symbolOutline' d='M-.031 6.469h6.938q-.031-.531-.031-1.094V4.25h18.188v1.125l-.031 1.094h6.938q0 5.063-1.656 8.719t-8 3.844q-.75 1.031-1.766 1.719t-2.359 1q0 1.031.438 2.313t1.813 1.906h2.688v4H9.16v-4h2.625q1.563-.625 1.891-1.891.234-.922.234-1.703 0-.297-.031-.594-1.375-.281-2.438-.984t-1.813-1.734q-6.344-.125-8-3.797T-.028 6.47zM1 7.5q.031 1.094.109 1.984t.203 1.641q.156 1.125.453 2.016t.734 1.609q.438.75 1.063 1.328T5 17.062q.438.219.938.391t1.063.266q.594.156 1.266.219t1.391.094h.5l.313.406q.688.938 1.594 1.516t2.031.828l.719.156.094.719q.063.469.047.906 0 .297-.016.578-.063.703-.281 1.297-.156.406-.375.766t-.531.672-.703.594-.859.469l-.188.063H10.19v1.938h11.906v-1.938h-1.875l-.219-.094q-.438-.188-.797-.453t-.672-.609q-.25-.313-.469-.656t-.375-.719q-.25-.594-.391-1.281t-.141-1.438v-.813l.813-.188q1.094-.25 1.969-.828t1.531-1.484l.313-.406.5-.031q1.406-.031 2.578-.281t2.078-.719q.813-.406 1.438-.984t1.063-1.359q.438-.688.734-1.578t.453-1.984q.125-.75.203-1.641t.109-1.953h-6.938V6.472q0-.281.016-.578t.016-.609H7.908q0 .313.016.609t.016.578v1.031H1.002zm2.406 2.531V9h4.625l.063.938q.094 1.313.266 2.438t.391 2.063l.344 1.375-1.406-.094q-1.25-.063-2.172-.578T4.095 13.72q-.469-.813-.578-1.797t-.109-1.891zm1.032 0q0 1.844.563 3.188t2.75 1.469q-.25-1.063-.422-2.234t-.266-2.422H4.438zm18.406 5.75l.344-1.344q.219-.938.391-2.063t.266-2.438l.063-.938h4.719v1.031q0 .906-.125 1.906t-.594 1.813q-.531.906-1.453 1.406t-2.234.563zm1.344-1.093q2.219-.094 2.813-1.453t.594-3.203h-2.719q-.094 1.25-.266 2.422t-.422 2.234z'></path></svg>";
+    const svgContentFilled =
+      "<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' fill='#ffc107' version='1.1' viewBox='0 0 32 32'><path class='symbolFill' d='M-.031 6.469h6.938q-.031-.531-.031-1.094V4.25h18.188v1.125l-.031 1.094h6.938q0 5.063-1.656 8.719t-8 3.844q-.75 1.031-1.766 1.719t-2.359 1q0 1.031.438 2.313t1.813 1.906h2.688v4H9.16v-4h2.625q1.563-.625 1.891-1.891.234-.922.234-1.703 0-.297-.031-.594-1.375-.281-2.438-.984t-1.813-1.734q-6.344-.125-8-3.797T-.028 6.47zm4.469 3.562q0 1.844.563 3.188t2.75 1.469q-.25-1.063-.422-2.234t-.266-2.422H4.438zm6.781.313l2.375 2.281-.563 3.281 2.938-1.531 2.938 1.531-.563-3.281 2.375-2.281-3.281-.5-1.469-2.969L14.5 9.844zm12.969 4.344q2.219-.094 2.813-1.453t.594-3.203h-2.719q-.094 1.25-.266 2.422t-.422 2.234z'></path><path class='symbolOutline' d='M-.031 6.469h6.938q-.031-.531-.031-1.094V4.25h18.188v1.125l-.031 1.094h6.938q0 5.063-1.656 8.719t-8 3.844q-.75 1.031-1.766 1.719t-2.359 1q0 1.031.438 2.313t1.813 1.906h2.688v4H9.16v-4h2.625q1.563-.625 1.891-1.891.234-.922.234-1.703 0-.297-.031-.594-1.375-.281-2.438-.984t-1.813-1.734q-6.344-.125-8-3.797T-.028 6.47zM1 7.5q.031 1.094.109 1.984t.203 1.641q.156 1.125.453 2.016t.734 1.609q.438.75 1.063 1.328T5 17.062q.438.219.938.391t1.063.266q.594.156 1.266.219t1.391.094h.5l.313.406q.688.938 1.594 1.516t2.031.828l.719.156.094.719q.063.469.047.906 0 .297-.016.578-.063.703-.281 1.297-.156.406-.375.766t-.531.672-.703.594-.859.469l-.188.063H10.19v1.938h11.906v-1.938h-1.875l-.219-.094q-.438-.188-.797-.453t-.672-.609q-.25-.313-.469-.656t-.375-.719q-.25-.594-.391-1.281t-.141-1.438v-.813l.813-.188q1.094-.25 1.969-.828t1.531-1.484l.313-.406.5-.031q1.406-.031 2.578-.281t2.078-.719q.813-.406 1.438-.984t1.063-1.359q.438-.688.734-1.578t.453-1.984q.125-.75.203-1.641t.109-1.953h-6.938V6.472q0-.281.016-.578t.016-.609H7.908q0 .313.016.609t.016.578v1.031H1.002zm2.406 2.531V9h4.625l.063.938q.094 1.313.266 2.438t.391 2.063l.344 1.375-1.406-.094q-1.25-.063-2.172-.578T4.095 13.72q-.469-.813-.578-1.797t-.109-1.891zm1.032 0q0 1.844.563 3.188t2.75 1.469q-.25-1.063-.422-2.234t-.266-2.422H4.438zm18.406 5.75l.344-1.344q.219-.938.391-2.063t.266-2.438l.063-.938h4.719v1.031q0 .906-.125 1.906t-.594 1.813q-.531.906-1.453 1.406t-2.234.563zm1.344-1.093q2.219-.094 2.813-1.453t.594-3.203h-2.719q-.094 1.25-.266 2.422t-.422 2.234z'></path></svg>";
+
+    let Obj = {
+      1: " 1",
+      2: " 2",
+      3: " 3",
+      4: " 4",
+      5: " 5",
+    };
+    const url = new URL(window.location.href);
+    const params = new URLSearchParams(url.search);
+ 
+    if (params.get('lang')) {
+      document.getElementById("languageSelector").value = params.get('lang');
+      changeLanguage();
+    }
+    function changeLanguage() {
+      language = document.getElementById("languageSelector").value;
+      document.getElementById("changeLanguageSpan").innerHTML = labelChangeLanguage[language];
+      document.getElementById("firstSectionHeading").innerHTML = startSectionHeading[language];
+      document.getElementById("firstSectionSubHeading").innerHTML = startSectionSubheading[language];
+      document.getElementById("firstSectionP1").innerHTML = startSectionP1[language];
+      document.getElementById("firstSectionP2").innerHTML = startSectionP2[language];
+      document.getElementById("firstSectionSubmitButton").innerHTML = ObjNextButtonText[language];
+    }
+
+
+    function switchDiv(showDiv, hideDiv) {
+      document.getElementById(showDiv).style.display = "block";
+      document.getElementById(hideDiv).style.display = "none";
+      initialCalling();
+    }
+    //ADD THE QUESTION
+    function addQuestion(title, options, main_title, subheading, isInput, question_no, isYesNoQuestion) {
+      questions.push({
+        main_title: main_title,
+        subheading: subheading ? subheading : "",
+        title: title,
+        options: options,
+        isInput: isInput ? isInput : false,
+        question_no: question_no,
+        isYesNoQuestion: isYesNoQuestion ? true : false
+      });
+    }
+
+    //QUESTIONS
+    addQuestion("Please rate your experience with Revolt RV1 Motorcycle.", [1, 2, 3, 4, 5], "", "", false, 1);
+    //////////////////////////////////////////////////////////
+    addQuestion(
+      "Please rate your experience with buying journey of Revolt.",
+      [1, 2, 3, 4, 5],
+      "", "", false, 2
+    );
+    ///////////////////////////////////////////////////////////////
+    addQuestion(
+      "Please rate the performance of Revolt RV1 in the following areas.",
+      [1, 2, 3, 4, 5],
+      "",
+      "A. Pick-up & Speed",
+      false,
+      3
+    );
+    addQuestion(
+      "Please rate the performance of Revolt RV1 in the following areas.",
+      [1, 2, 3, 4, 5],
+      "",
+      "B. Ease of handling & turn",
+      false,
+      3
+    );
+    addQuestion(
+      "Please rate the performance of Revolt RV1 in the following areas.",
+      [1, 2, 3, 4, 5],
+      "",
+      "C.  Kilometer range in full charge",
+      false,
+      3
+    );
+    addQuestion(
+      "Please rate the performance of Revolt RV1 in the following areas.",
+      [1, 2, 3, 4, 5],
+      "",
+      "D. Power & load carrying capacity",
+      false,
+      3
+    );
+    addQuestion(
+      "Please rate the performance of Revolt RV1 in the following areas.",
+      [1, 2, 3, 4, 5],
+      "",
+      "E. Overall Riding Experience",
+      false,
+      3
+    );
+    /////////////////////////////////////////////////////////////
+    addQuestion(
+      "Please rate  the design and features aspects of Revolt RV1. ",
+      [1, 2, 3, 4, 5],
+      "",
+      "A. Build quality and sturdiness",
+      false,
+      4
+    );
+    addQuestion(
+      "Please rate  the design and features aspects of Revolt RV1. ",
+      [1, 2, 3, 4, 5],
+      "",
+      "B. The look and style of the bike",
+      false,
+      4
+    );
+    addQuestion(
+      "Please rate  the design and features aspects of Revolt RV1.",
+      [1, 2, 3, 4, 5],
+      "",
+      "C. Comfort of the seat & riding position",
+      false,
+      4
+    );
+    /////////////////////////////////////////
+    // addQuestion(
+    //   "Do you think the RV1 is worth the money you paid?",
+    //   [
+    //     "1 - Not at all",
+    //     "2 - A little",
+    //     "3 - Neutral",
+    //     "4 - Yes",
+    //     "5 - Absolutely",
+    //   ],
+    //   "",
+    //   "",
+    //   false,
+    //   5
+    // );
+    /////////////////////////////////////////
+    addQuestion(
+      "Would you recommend Revolt RV1 to your friends or family? ",
+      [1, 2],
+      "",
+      "",
+      false,
+      5,
+      true
+    );
+    //////////////////////////////////////
+    addQuestion("What you like most about Revolt RV1?", [], "", "", true, 6);
+    addQuestion(
+      "Suggestions to improve Revolt RV1",
+      [],
+      "",
+      "",
+      true,
+      7
+    );
+    // addQuestion("Any other comments or suggestions?", [], "", "", true, 9);
+    function selectValue(index) {
+      document.getElementById("error-message").style.display = "none";
+      var options = document.getElementsByClassName("optionLabel");
+      var inputOptions = document.getElementsByClassName("option");
+
+      inputOptions[index].checked = true;
+
+      for (let i = 1; i <= questions[start].options.length; ++i) {
+        if (index >= i) {
+          options[i].innerHTML =
+            `<div style="cursor:pointer;" onclick="selectValue(${i})">${svgContentFilled}` +
+            `<span style="margin-left:5px;">${Obj[i]}<span></div>`;
+        } else {
+          options[i].innerHTML =
+            `<div style="cursor:pointer;" onclick="selectValue(${i})">${svgContentEmpty}` +
+            `<span style="margin-left:5px;">${Obj[i]}<span></div>`;
+        }
+
+        if (index != i) {
+          inputOptions[i].checked = false;
+        }
+      }
+    }
+
+    function initialCalling() {
+      //condition///
+      if (start < questions.length) {
+        document.getElementById("submitbutton").innerHTML = ObjNextButtonText[language];
+        document.getElementById("mainTitle").innerHTML = "";
+        document.getElementById("subHeading").innerHTML = "";
+        document.getElementById("myForm").innerHTML = "";
+        document.getElementById("error-message").style.display = "none";
+        document.getElementById("progressBar").innerHTML = questions[start].question_no + "/" + "7";
+
+        if (questions[start].isInput) {
+          document.getElementById("question").innerHTML = (questions[start].question_no + ". ") + QuestionsWithLanguage[language][start].question;
+          document.getElementById("ratingBar").innerHTML = "";
+
+
+          // document.getElementById("question").innerHTML =  (questions[start].question_no + ". ")+ questions[start].title;
+
+          const textarea = document.createElement("textarea");
+          textarea.id = "textarea" + start; // Assign an ID to the textarea
+          textarea.className = "my-textarea"; // Optional: Add a class
+          textarea.placeholder = "Type your text here..."; // Placeholder text
+          textarea.rows = 3; // Set number of rows
+          textarea.style.width = "100%";
+          const container = document.getElementById("myForm");
+          container.appendChild(textarea);
+        } else {
+          /////////////////FOR THE ZEROTH ELEMENT ONLY////////////
+          // Create the div element
+          ///////////TODO//////
+          document.getElementById("ratingBar").innerHTML = noteText[language];
+          const radioDiv = document.createElement("div");
+          radioDiv.className = "radio p-1";
+          radioDiv.style.display = "none"; // set display to none
+
+          // Create the input element
+          const radioInput = document.createElement("input");
+          radioInput.type = "radio";
+          radioInput.className = "option";
+          radioInput.name = "option";
+          radioInput.value = "default";
+          radioInput.checked = true; // pre-check the radio button
+
+          // Create the label element
+          const radioLabel = document.createElement("label");
+          radioLabel.className = "optionLabel";
+          radioLabel.textContent = "Default";
+
+          // Append the input and label to the div
+          radioDiv.appendChild(radioInput);
+          radioDiv.appendChild(radioLabel);
+
+          // Append the div to the container
+          const container = document.getElementById("myForm");
+          container.appendChild(radioDiv);
+
+          ////////////ADD OPTIONS DYNAMICALLY//////
+          for (let i = 0; i < questions[start].options.length; ++i) {
+            const radioDiv = document.createElement("div");
+            radioDiv.className = "radio p-1";
+
+            // Create the input element
+            const radioInput = document.createElement("input");
+            radioInput.type = "radio";
+            radioInput.className = "option";
+            radioInput.name = "option";
+            radioInput.value = ""; // Set the value as required
+
+            // Create the label element
+            const radioLabel = document.createElement("label");
+            radioLabel.className = "optionLabel";
+            radioLabel.textContent = `Option ${i}`;
+
+            // Append the input and label to the div
+            radioDiv.appendChild(radioInput);
+            radioDiv.appendChild(radioLabel);
+
+            // Append the div to the container
+            const container = document.getElementById("myForm");
+            container.appendChild(radioDiv);
+          }
+
+          if (questions[start].main_title) {
+            document.getElementById("mainTitle").innerHTML =
+              questions[start].main_title;
+          }
+
+          if (questions[start].subheading) {
+            // document.getElementById("subHeading").innerHTML = questions[start].subheading;
+            document.getElementById("subHeading").innerHTML = QuestionsWithLanguage[language][start].subheading;
+          }
+
+          var options = document.getElementsByClassName("optionLabel");
+          var inputOptions = document.getElementsByClassName("option");
+
+          // document.getElementById("question").innerHTML = (questions[start].question_no + ". ") + questions[start].title;
+          document.getElementById("question").innerHTML = (questions[start].question_no + ". ") + QuestionsWithLanguage[language][start].question;
+
+          /////////////////SELECT THE ZEROTH OPTION BY DEFAULT////////////////
+          for (let j = 1; j <= questions[start].options.length; ++j) {
+            inputOptions[j].setAttribute("value", questions[start].options[j - 1]);
+            inputOptions[j].disabled = false;
+
+            if (questions[start].isYesNoQuestion) {
+              document.getElementById("ratingBar").innerHTML = "";
+              options[j].innerHTML = (j === 1) ? 'Yes' : 'No';
+            } else {
+              options[j].innerHTML =
+                `<div style="cursor:pointer;" onclick="selectValue(${j})">${svgContentEmpty}` +
+                `<span style="margin-left:5px;">${Obj[j]}<span></div>`;
+              inputOptions[j].style.display = 'none';
+            }
+          }
+        }
+      }
+      //answer display//
+      else {
+
+        const url = new URL(window.location.href);
+        const params = new URLSearchParams(url.search);
+        const uuid = params.get('fid');
+
+        let payload = {
+          "mobile": uuid ? uuid : "",
+          "satisfactionRating": parseInt(userAnswers[0]),
+          "salesProcessRating": parseInt(userAnswers[1]),
+          "performanceSpeed": parseInt(userAnswers[2]),
+          "performanceHandling": parseInt(userAnswers[3]),
+          "performanceBatteryLife": parseInt(userAnswers[4]),
+          "performanceSpeedPower": parseInt(userAnswers[5]),
+          "performanceSmoothness": parseInt(userAnswers[6]),
+          "designBuildQuality": parseInt(userAnswers[7]),
+          "designLookStyle": parseInt(userAnswers[8]),
+          "designComfort": parseInt(userAnswers[9]),
+          // "valueForMoney": parseInt(userAnswers[10]),
+          "recommendationRating": parseInt(userAnswers[10]),
+          "likeMost": userAnswers[11],
+          "improveChange": userAnswers[12],
+          // "additionalComments": userAnswers[14]
+        }
+
+
+        // Define the API endpoint
+        const apiUrl = 'https://dmsi.revoltmotors.com/api/v1/customer/savesurveyfeedback';
+
+        // Prepare the data to be sent
+        const data = { ...payload }
+
+        // Make the POST request using Fetch API
+        fetch(apiUrl, {
+          method: 'POST', // Specify the request method
+          headers: {
+            'Content-Type': 'application/json' // Set the content type to JSON
+          },
+          body: JSON.stringify(data) // Convert the data to a JSON string
+        })
+          .then(response => {
+            // Check if the response is okay (status in the range 200-299)
+            if (!response.ok) {
+              throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json(); // Parse the JSON from the response
+          })
+          .then(data => {
+            if (data.success) {
+              /////API HIT/////
+              document.getElementById("answerkeycontainer").style.display = "block";
+              document.getElementById("thankYouText").innerHTML = ObjThankYouText[language];
+              //disable the questions block//
+              document.getElementsByClassName("questionContainer")[0].style.display = "none";
+              //show the  score in the heading//
+            }
+          })
+          .catch(error => {
+            // Handle any errors that occurred during the fetch
+            console.error('Error:', error);
+          });
+      }
+    }
+
+    //initial calling on  loading of script//
+    initialCalling();
+
+    function checkAnswer() {
+  // Get the value of the input
+  if (questions[start].isInput) {
+    userAnswer = document.getElementById("textarea" + start).value.trim();
+    // Removed the validation for empty userAnswer
+  } else {
+    userAnswer = document.querySelector('input[name="option"]:checked').value;
+  }
+
+  // Check for no option selection if not an input
+  if (!questions[start].isInput && userAnswer === "default") {
+    document.getElementById("error-message").style.display = "block";
+    document.getElementById("error-message").innerHTML = ErrorMessageObj[language];
+    // const errorDiv = document.getElementById("error-message");
+    // errorDiv.classList.remove("hidden");
+    return;
+  }
+
+  userAnswers.push(userAnswer);
+  nextQuestion();
+}
+    //shift to the nextQuestion//
+    function nextQuestion() {
+      start++;
+      initialCalling();
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+/* .modal.show .modal-dialog {
+  overflow: hidden;
+}
+.modal-content {
+  z-index: 9999999;
+  margin-top: 55px;
+}
+#exampleModal {
+  background-color: rgba(78, 78, 78, 0.575);
+}
+
+@media only screen and (max-width: 768px) {
+  .bike-info-card-section .product-card .bike-model {
+    font-size: 14px;
+  }
+  .bike-info-card-section .product-card .book-now {
+    margin-right: 0px;
+  }
+} */
+
+/* .col-md-5.pt-4.pb-4.ev_savings.desktop{
+    height: max-content !important;
+} */
+/* .pb-4.py-4{
+    height: max-content !important;
+} */
+
+/* .dropdown-menu {
+  max-height: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease !important;
+}
+
+
+.dropdown-menu.show {
+  max-height: 500px !important;
+  
+  opacity: 1 !important;
+  display: block;
+} */

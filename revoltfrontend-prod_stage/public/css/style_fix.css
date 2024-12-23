@@ -1,0 +1,280 @@
+.fixed .revolt-booknowtext a {
+  margin-top: 0;
+}
+
+.revolt-booknowtext a {
+  margin: 39px;
+  display: inline-block;
+  border: 1px solid #000;
+  color: #000;
+  background: #000;
+  border-radius: 4px;
+  padding: 8px 30px;
+  margin-top: 2px;
+}
+.main-sec {
+  background: rgb(255 255 255);
+}
+.spacingTop {
+  padding-top: 25px;
+}
+.navbar-fixed {
+  background: #fff;
+}
+.fixed .spacingTop {
+  padding-top: 16px;
+}
+.text-center2 {
+  text-align: center !important; /* margin-top: 5px !important; */
+}
+.explore_now a {
+  background: #ed1c24 0% 0% no-repeat padding-box;
+  border: 1px solid #ed1c24;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px 19px;
+  color: #fff;
+  position: relative;
+  top: -50px;
+}
+.first-aibike {
+  padding: 50px 0;
+  background: #fff;
+}
+.revolution-in-dna h3 {
+  color: #000;
+}
+.revolution-in-dna
+  #revo-dna1
+  .product-caption
+  .heading-and-caption
+  .gradtext
+  h5 {
+  font-size: 60px;
+  line-height: 80px;
+  margin-bottom: 0;
+  text-transform: lowercase;
+  color: #020202;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+.revolution-in-dna
+  #revo-dna1
+  .product-caption
+  .heading-and-caption
+  .gradtext
+  p {
+  letter-spacing: normal;
+  text-transform: capitalize;
+  color: #6d6e71;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0; /* font: normal normal normal 15px/23px Montserrat;*/
+}
+.revolution-in-dna #revo-dna1 .product-caption .heading-and-caption p {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 7px;
+  text-transform: uppercase; /* margin-bottom: 15px; */
+  color: #6d6e71;
+}
+
+/*NEW CLASS BTN*/
+.text-center2 {
+  text-align: center !important;
+  margin-top: -50px;
+}
+.rv400-bike-switch ul li,
+.rv300-bike-switch ul li {
+  margin: 5px 0px !important;
+  text-align: left !important;
+}
+.book-now a {
+  background: #000000;
+  color: #fff;
+  border: solid 1px #000000;
+}
+.testdrive-wrapper a {
+  background: #000000;
+  color: #fff;
+  border: solid 1px #000000;
+}
+.revolt-booknowtext a {
+  background: #fff;
+}
+.fixed .revolt-booknowtext a {
+  background: #fff !important;
+  color: rgb(5, 5, 5) !important;
+  border: solid 1px #000000;
+}
+.fixed .testdrive-wrapper a,
+.fixed .book-now a,
+.fixed .revolt-booknowtext a {
+  padding: 8px 17px;
+}
+.fixed .testdrive {
+  margin-top: 23px;
+}
+.markt {
+  margin-top: 25px;
+}
+.fixed img,
+.fixed .spacingTop img {
+  max-width: 100%;
+}
+.fixed .testdrive-wrapper a,
+.fixed .book-now a,
+.fixed .revolt-booknowtext a {
+  background: #000000;
+  color: #fff;
+  border: solid 1px #000000;
+}
+.gallery h3.font38.hd_mbl_vw {
+  color: #fff;
+  margin-bottom: 8px;
+}
+#progressbar {
+  margin-bottom: 0;
+}
+.login-space {
+  min-height: unset !important;
+}
+h2 {
+  padding-bottom: 5px;
+}
+
+/*comfort screen css*/
+.spacingTop {
+  padding-top: 25px;
+}
+.fixed .testdrive-wrapper a,
+.fixed .book-now a,
+.fixed .revolt-booknowtext a {
+  padding: 8px 17px;
+}
+.txt_vdo_itm .sld_vdo video {
+  width: 61%;
+}
+.owl_sld_right a.nav-link.active {
+  height: auto;
+  padding: 14px;
+}
+.rv_text h4 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 16px;
+  margin-top: -155px;
+}
+.rv400_text h4 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 8px;
+  margin-top: -80px;
+}
+.rv500_text h4 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 16px;
+  margin-top: -170px;
+}
+.rv600_text h4 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 16px;
+  margin-top: 160px;
+}
+.tabsystem_usp {
+  background-color: #ffffff;
+}
+.usp_chagingtab li {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  background: #ebedf0;
+  border-bottom: solid 2px #fff;
+  border-left: solid 7px #d4d5d8;
+  display: flex;
+  align-items: center;
+}
+.usp_chagingtab .nav-link.active:before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 100px;
+  background-color: #ed1c24;
+  top: -1px;
+  left: -8px;
+}
+.our-motorcycles #productinfo .owl-prev {
+  right: -256px !important;
+  top: -60px !important;
+}
+.revolution-in-dna #revo-dna1 .owl-nav {
+  display: block;
+  background: transparent;
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: right;
+  height: 60px;
+  position: relative;
+  top: 0px;
+  right: -85px;
+}
+section.gallery {
+  background: #373739;
+  padding: 50px 0;
+}
+.arsenalrevolt {
+  background-color: #ffffff;
+}
+.media.touchscree {
+  margin-bottom: 10px;
+}
+.font38 {
+  font-size: 45px;
+  line-height: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 5px 0 10px 0;
+  background: transparent;
+  display: block;
+}
+.usp_chagingtab li {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  background: #ffffff;
+  border-bottom: solid 2px #fff;
+  border-left: solid 7px #ffffff;
+  display: flex;
+  align-items: center;
+}
+.ml-4,
+.mx-4 {
+  margin-left: 0px !important;
+}
+.get-your-motor {
+  background-color: #ffffff;
+  padding-bottom: 30px;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #ffffff;
+  background-color: #fff;
+  border-color: #ffffff #ffffff #fff;
+}
+.usp_chagingtab .nav-link.active:before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 100px;
+  background-color: #ffffff;
+  top: -1px;
+  left: -8px;
+}
+.touchscree .media-body {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 25px !important;
+}

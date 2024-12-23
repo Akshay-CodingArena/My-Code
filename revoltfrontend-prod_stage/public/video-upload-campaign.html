@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Revolt Video Upload</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://www.revoltmotors.com/images/fav.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://www.revoltmotors.com/images/fav.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://www.revoltmotors.com/images/fav.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://www.revoltmotors.com/images/fav.png"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <link
+      href="https://wefin.in/assets/css/bankse-common.css"
+      rel="stylesheet"
+    />
+    <style>
+     body{background-color:#ddd; font-family: 'Montserrat', sans-serif;}
+
+       :root {
+
+        --main-bg: #2e0080;
+
+       }
+
+
+
+
+   
+
+
+
+
+       input:focus,
+
+       button:focus {
+
+        border: 1px solid var(--main-bg) !important;
+
+        box-shadow: none !important;
+
+       }
+
+
+
+
+       .form-check-input:checked {
+
+        background-color: var(--main-bg) !important;
+
+        border-color: var(--main-bg) !important;
+
+       }
+
+
+
+
+       .card {
+
+        padding:15px 20px;
+
+  background-color: #fff;
+
+  box-shadow: 0 0 35px rgb(0 0 0 / 3%);
+
+  margin: 0 auto;
+
+  border-radius:0px 0px 10px 10px !important;
+
+ 
+
+}
+
+.main .card h2{ font-size: 18px; padding-bottom: 10px;}
+
+
+
+
+.main .card p span{color: #c91b1b; font-weight: 600;}
+
+.main .card p + p{ margin-bottom: 30px;}
+
+ header img{ max-width: 130px; height: auto;}
+ .form-control {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 15px !important;
+
+  border-radius: 5px;
+
+  background: #f5f5f5;
+
+  border: 1px solid #f2f2f2 !important;
+
+  font-weight: 500 !important;
+
+  padding: 15px 20px !important;
+
+
+
+
+}
+
+.main img{border-radius:5px 5px 0px 0px !important;}
+
+textarea.form-control { height: 70px; resize: none;}
+
+.form-control:focus{ box-shadow: none !important; border: 1px solid #ccc !important;}
+
+.main-bg{background-color: #0f0f0f;
+
+  max-width: 300px;
+
+  margin: auto;
+
+  width: 100%;
+
+  text-align: center;
+
+  height: 45px;}
+.player{
+  margin-top: -20px;
+  height:200px;
+  width:300px;
+}
+.playerHide{
+  display:none;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container
+      ">
+      <img
+      src="https://www.revoltmotors.com/images/revolt-motors-logo.svg"
+      width=""
+      height=""
+      alt="Revolt Logo"
+     
+    />
+    </div>
+    </header>
+ 
+    <main class="main" id="top">
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-sm-12">
+            <img  src="https://wefin.in/revolt/banner-1.png" width="" height="" alt="" class="img-fluid banner">
+          </div>
+        </div>
+      </div>
+      <div id="formFields" class="container">
+        
+        <div class="row justify-content-center ">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="card">
+              <div class="text-center">
+               
+              </div>
+        
+              <div class="card-body">
+                <div class="text-left">
+
+                           <h2 class="fs-title "><b>Hey Revolters!</b></h2><p>
+                  
+                            Now you can win the all new Revolt <span>hardware upgrade package</span> to
+                  
+                  enable Swipe to Start, Voice Commands, Virtual Key and many more
+                  
+                  features <span>worth ₹10,000 absolutely free.</span></p>
+                  
+                  <p>Just <span>upload a video</span> of "What do you love the most about your Revolt.</p></div>
+                <form id="check-score">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="mb-4">
+                      
+                      
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="campaignName"
+                          id="name"
+                          placeholder="Name"
+                        />
+                      </div>
+                        
+                     </div> <div class="col-sm-6"><div class="mb-4">
+                 
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="campaignName"
+                        id="mobile"
+                        maxlength="10"
+                        placeholder="Mobile "
+                      />
+                    </div>
+                    </div>
+                    <div class="col-sm-6"> <div class="mb-4">
+                    
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="campaignName"
+                        id="email"
+                        placeholder="Email"
+                      />
+                    </div></div>
+                    <div class="col-sm-6"> <div class="mb-4">
+                    
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="campaignName"
+                        id="bikeNo"
+                        placeholder="Revolt Bike No"
+                        maxlength="10"
+                      />
+                    </div></div>
+                  
+                  </div>
+                   <div class="mb-4">
+                      
+                    <textarea id="message" class="form-control" placeholder="Message"></textarea>
+                  </div>
+                 
+                 
+              
+                  <div class="mb-4">
+                    <label for="file" class="form-label">Upload A Video</label>
+                    <input
+                      type="file"
+                      accept="video/*"
+                      class="form-control"
+                      id="file"
+                      name="file"
+                    />
+
+                   
+                  </div>
+                    <video class="player playerHide" controls id="video-tag">
+                      <source id="video-source">
+                      Your browser does not support the video tag.
+                    </video>
+
+                  <div class="d-grid">
+                    <button class="btn text-light main-bg" id="submit_mob">
+                      Submit
+                    </button>
+                  </div>
+                
+                  <div class="d-grid">
+                    <div style="margin: 15px 0px 0px" id="error"></div>
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="container">
+        <div class="row" id="res"></div>
+      </div>
+      <br />
+      <br />
+    </main>
+  </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://wefin.in/assets/js/bootstrap.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://wefin.in/assets/js/is.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://wefin.in/assets/js/main.js"
+></script>
+<script>
+  $(document).ready(function () {
+    const videoSrc = document.querySelector("#video-source");
+const videoTag = document.querySelector("#video-tag");
+const inputTag = document.querySelector("#file");
+const playerContainer = document.querySelector("#video-tag")
+const formFields = document.querySelector("#formFields")
+
+inputTag.addEventListener('change',  readVideo)
+
+function readVideo(event) {
+ // console.log(event.target.files[0])
+  if (event.target.files && event.target.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      console.log('loaded')
+      playerContainer.classList.remove("playerHide")
+      videoSrc.src = e.target.result
+      videoTag.load()
+    }.bind(this)
+
+    reader.readAsDataURL(event.target.files[0]);
+  }
+}
+
+function isValidBikeNumber(Number){
+  var pattern = /^[A-Z,a-z]{2}[0-9]{1,2}[A-Z,a-z]{1,2}[0-9]{3,4}$/
+  return pattern.test(Number)
+   }
+
+function isValidMobile(Number){
+  var pattern = /^[6-9]{1}[0-9]{9}$/
+  return pattern.test(Number)
+   }
+
+function isValidEmail(Number){
+  var pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  return pattern.test(Number)
+}
+      
+    $("#submit_mob").click(function (e) {
+      e.preventDefault();
+      var file = document.getElementById("file").files[0];
+      var form_data = new FormData();
+      const name = document.querySelector("#name").value;
+      const mobile = document.querySelector("#mobile").value
+      const email = document.querySelector("#email").value;
+      const bikeNo = document.querySelector("#bikeNo").value
+      const message = document.querySelector("#message").value
+
+      form_data.append("file", file);
+      form_data.append("name", name);
+      form_data.append("mobile",mobile)
+      form_data.append("email", email);
+      form_data.append("message", message);
+      form_data.append("vehicle_number", bikeNo);
+      if (name == "") {
+        $("#error").html(
+          '<p class="alert alert-danger">Please Enter Your Name</p>'
+        );
+        setTimeout(() => {
+          $("#error").html("");
+        }, 3000);
+        
+      } 
+      else if (mobile == "" || !isValidMobile(mobile)) {
+        $("#error").html(
+          '<p class="alert alert-danger">Please Enter Mobile No.</p>'
+        );
+        setTimeout(() => {
+          $("#error").html("");
+        }, 3000);
+        
+      } 
+      else if (email == "" || !isValidEmail(email)) {
+        $("#error").html(
+          '<p class="alert alert-danger">Please Enter Your Email Address</p>'
+        );
+        setTimeout(() => {
+          $("#error").html("");
+        }, 3000);
+      }
+      else if (bikeNo == "" || !isValidBikeNumber(bikeNo)) {
+        $("#error").html(
+          '<p class="alert alert-danger">Please Enter Your Bike No.</p>'
+        );
+        setTimeout(() => {
+          $("#error").html("");
+        }, 3000);
+      }
+      else if (!file) {
+        $("#error").html(
+          '<p class="alert alert-danger">Please Select a Video File</p>'
+        );
+        setTimeout(() => {
+          $("#error").html("");
+        }, 3000);
+      } else {
+        fetch("https://apiuat.wefin.in/addRevoltCustomer", {
+          method: "POST",
+          body: form_data,
+        }).then((data) => {
+          if (data.ok) {
+            formFields.classList.add("playerHide")
+            $("#res").html(
+              '<div class="col-sm-12 text-center"><div class="alert alert-success alert-dismissible fade show"><p><strong>' +
+                "Thank You For Sharing Your Experience With Us" +
+                "</strong> <button type='button' class='btn-close' data-bs-dismiss='alert'></button></p></div></div>"
+            );
+          } else {
+            $("#res").html(
+              '<div class="col-sm-12 text-center"><div class="score-page-block"><p>No Message Not Sent</p></div></div>'
+            );
+          }
+        });
+      }
+    });
+    $("#submit_mob1").click(function (e) {
+      e.preventDefault();
+      const m = $("#mob").val();
+      var lenderlinks = document.querySelector("#lenderlinks1");
+      const campaignlink = lenderlinks.value;
+      const date = new Date();
+      const newDate = `${date.getDate()}-${
+        date.getMonth() + 1
+      }-${date.getFullYear()}`;
+      const campaignName = "Tele Caller";
+      const product =
+        lenderlinks.options[lenderlinks.selectedIndex].getAttribute("product");
+      const lender =
+        lenderlinks.options[lenderlinks.selectedIndex].getAttribute("lender");
+      const firstName = $("#firstName").val();
+      const lastName = $("#lastName").val();
+      if (m == "") {
+        $("#error").html(
+          '<p class="alert alert-danger">Please provide mobile number</p>'
+        );
+        setTimeout(() => {
+          $("#error").html("");
+        }, 3000);
+      } else if (lastName == "") {
+        $("#error").html(
+          '<p class="alert alert-danger">Please provide last name</p>'
+        );
+        setTimeout(() => {
+          $("#error").html("");
+        }, 3000);
+      } else if (campaignlink == "") {
+        $("#error").html(
+          '<p class="alert alert-danger">Please Select Lender</p>'
+        );
+        setTimeout(() => {
+          $("#error").html("");
+        }, 3000);
+      } else {
+        $.post(
+          "https://api.wefin.in/ivrCampaign",
+          {
+            mobile: m,
+            campaignlink: campaignlink,
+            FirstName: firstName,
+            LastName: lastName,
+            campaignname: campaignName,
+            productname: product,
+            lender: lender,
+          },
+          function (data) {
+            if (data.success) {
+              $("#res").html(
+                '<div class="col-sm-12 text-center"><div class="alert alert-success alert-dismissible fade show"><p><strong>' +
+                  data.message +
+                  " on" +
+                  "- " +
+                  m +
+                  "</strong> <button type='button' class='btn-close' data-bs-dismiss='alert'></button></p></div></div>"
+              );
+            } else {
+              $("#res").html(
+                '<div class="col-sm-12 text-center"><div class="score-page-block"><p>Message Not Sent</p></div></div>'
+              );
+            }
+          }
+        );
+      }
+    });
+    $("#reset").click(function (e) {
+      e.preventDefault();
+      $("#error").html("");
+      $("#res").html("");
+      $("#file").val("");
+      $("#firstName").val("");
+      $("#lastName").val("");
+      $("#campaignName").val("");
+      $("#campaignName1").val("");
+      $("#mob").val("");
+      $("#lenderlinks1").get(0).selectedIndex = 0;
+      $("#lenderlinks").get(0).selectedIndex = 0;
+    });
+  });
+</script>

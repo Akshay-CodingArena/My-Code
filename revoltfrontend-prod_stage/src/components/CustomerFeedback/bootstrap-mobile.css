@@ -1,0 +1,4 @@
+/* bootstrap-mobile.css */
+@media (max-width: 767px) {
+  @import "~bootstrap/dist/css/bootstrap.min.css";
+}

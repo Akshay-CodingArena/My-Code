@@ -1,0 +1,97 @@
+.get-your-motor {
+  background-color: #f1f3f6;
+  padding-bottom: 30px;
+}
+.get-your-motor-text h1 {
+  font-size: 43px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.get-your-motor-text p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.book-now-btn {
+  background: #ed1c24;
+  color: #fff;
+  border: solid 1px #ed1c24;
+  padding: 8px 17px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 25px;
+}
+.motor-box-1 {
+  position: relative;
+  margin: 80px 0;
+}
+.motor-box-text {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 39%;
+}
+.our-identity {
+  padding: 100px 0;
+}
+.motor-box-text h1 {
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.motor-box-text p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 22px;
+}
+.our-identity-text h1 {
+  font-size: 46px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.our-identity p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.our-identity-text {
+  width: 44%;
+}
+.book-now-btn:hover {
+  color: #ffffff;
+}
+.new-table-bs {
+  min-height: 200px;
+}
+.usp_chagingtab .nav-link.active:before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 153px;
+  background-color: #ed1c24;
+  top: -1px;
+  left: -8px;
+}
+.charging-boxs {
+  position: relative;
+}
+.charging-text {
+  position: absolute;
+  top: 35%;
+  margin: auto;
+  left: 9%;
+}
+.charging-text h2 {
+  font-size: 48px;
+  color: #fff;
+  line-height: 15px;
+}
+.charging-text h1 {
+  font-size: 75px;
+  color: #fff;
+  font-weight: 700;
+}

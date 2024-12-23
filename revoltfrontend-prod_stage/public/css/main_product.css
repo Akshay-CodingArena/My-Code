@@ -1,0 +1,314 @@
+/*--===================================start main_product css===================================--*/
+.mainproduct_banner_box {
+  padding: 188px 0px 0px 212px;
+}
+#mainbroduct_banner {
+  background: url("../images/mainproductbanner.jpg");
+  height: auto;
+  max-height: 500px;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+.mainproduct_heading {
+  font-size: 90px;
+  text-align: left;
+  color: #fff;
+  text-shadow: 2px 1px 2px;
+  font-weight: bold;
+}
+.mainproduct_heading_btn {
+  background: #ed1c24;
+  color: #fff;
+  border: solid 1px #ed1c24;
+  border-radius: 4px;
+  margin-left: 5px;
+  padding: 8px 27px;
+}
+.mainproduct_heading_btn:hover {
+  background: #ed1c24;
+  color: #fff;
+  border: solid 1px #ed1c24;
+  border-radius: 4px;
+  padding: 8px 27px;
+}
+.mainproduct_breadcrum {
+  line-height: 37px;
+}
+.mainproduct_section_content {
+  padding-top: 57px;
+}
+#mainproduct_evening_banner {
+  background: url("../images/mainproduct_section_baner.jpg");
+  height: auto;
+  max-height: 500px;
+  background-repeat: no-repeat;
+  min-height: 460px;
+  background-position: right;
+  background-size: auto;
+}
+#mainproduct_Collapse {
+  background-color: #fff;
+  padding-bottom: 60px;
+}
+.mainproduct_Collapse_box {
+  margin: 60px auto;
+  background: #fff;
+  width: 1140px;
+}
+.mainproduct_Collapse_box a {
+  color: #fff;
+  font-size: 18px;
+  padding: 13px 0px;
+  text-align: center;
+  display: block;
+  background: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Six columns side by side */
+.column {
+  width: 31.6%;
+  margin-left: 16px;
+  display: flex;
+  margin: 0 auto;
+  margin: 0;
+  margin-left: 15px;
+}
+.mySlides img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+#mainproduct_Collapse .demo {
+  padding: 18px;
+  height: 180px;
+}
+#mainproduct_Collapse .demo h5 {
+  font-weight: bold;
+}
+.column:hover #mainproduct_Collapse .demo {
+  background: #000;
+  color: #fff;
+  border-top: 1px solid red;
+  border-bottom-left-radius: 4px;
+}
+.column:hover .demo1 {
+  background: #000;
+  color: #fff;
+  border-top: 1px solid red;
+  border-bottom-left-radius: 4px;
+}
+.column:hover .demo2 {
+  background: #000;
+  color: #fff;
+  border-top: 1px solid red;
+}
+.column:hover .demo3 {
+  background: #000;
+  color: #fff;
+  border-top: 1px solid red;
+  border-bottom-right-radius: 4px;
+}
+#mainproduct_charging_banner {
+  background: url("../images/chargeingimg.jpg");
+  height: auto;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+.charginbox {
+  margin: 123px 83px 0px 139px;
+  background: #000;
+  color: #fff;
+  padding: 30px;
+}
+#mainproduct_blog {
+  background-color: #f1f3f6;
+  padding: 80px 0px 53px;
+  height: 584px;
+}
+#mainproduct_blog .blog-box {
+  width: 100%;
+  max-width: 44%;
+  float: left;
+  margin-right: 51px;
+}
+#mainproduct_blog .blog-box img {
+  border-radius: 5px;
+  height: 311px;
+}
+.subblog-box-heading {
+  position: absolute;
+  width: 100%;
+  max-width: 414px;
+  padding: 17px;
+  background: #fff;
+  bottom: -66px;
+  border-radius: 5px;
+  min-height: 181px;
+}
+.subblog-box-heading h5 {
+  text-shadow: 1px 1px 1px;
+  font-weight: inherit;
+}
+.blogbtn {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 150px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 107px auto;
+}
+.charginbox h5 {
+  text-shadow: 1px 1px 1px;
+  font-weight: bold;
+}
+.mainproduct_Collapse_box #demo img {
+  border-bottom: 0px;
+  float: left;
+  text-align: left;
+  padding: 10px 14px;
+}
+.collapse_box_content {
+  text-align: left;
+  padding: 12px;
+  background: #fff;
+  height: 115px;
+  border-bottom: solid 1px #333;
+  border-right: solid 1px #333;
+}
+.mainproduct_breadcrum span a {
+  color: #6d6e71 !important;
+}
+.collapse_box_content h6 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.mainproduct_Collapse_box img {
+  margin-right: 10px;
+}
+.collapse_box_content p {
+  font-size: 14px;
+}
+.collapse_box_content.last {
+  border-right: none;
+}
+.collapse_box_content.bottomlst {
+  border-bottom: none;
+}
+.float-left span,
+.float-right span {
+  font-size: 24px;
+  display: block;
+  font-weight: 800;
+  color: #000;
+  line-height: 35px;
+}
+.tabstatus .tab-pane {
+  color: #000;
+}
+section.tabsection {
+  overflow: hidden;
+  width: 330px;
+  margin-top: -120px !important;
+  margin: 0 auto;
+}
+.tabsection ul.nav.nav-tabs {
+  background: rgb(0 0 0 / 40%);
+  padding: 10px;
+  border-radius: 0px;
+  position: relative;
+}
+.tabsection .nav-tabs .nav-link.active {
+  color: #fff;
+  background: #ed1c24;
+}
+.tabsection .nav-tabs .nav-link.active {
+  color: #fff;
+  background: #ed1c24;
+  border-radius: 0px;
+}
+.tabsection .nav-tabs .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+.tabsection .nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+.tab-content.tabstatus {
+  background-color: #fff;
+  padding-top: 23px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: solid 1px #d8d9dc;
+  padding: 13px;
+  margin-top: 20px;
+  position: relative;
+}
+.tabstatus .active {
+  border-bottom: none;
+  border-top: none;
+}
+.arrowbtnleft i.fa.fa-chevron-circle-right {
+  font-size: 30px;
+  color: #d1d3d4;
+}
+.mainproduct_Collapse .active .arrowbtnleft i,
+.mainproduct_Collapse .arrowbtnleft i .demo:hover {
+  color: red;
+}
+.column:hover .arrowbtnleft i.fa.fa-chevron-circle-right {
+  color: #ed1c24;
+}
+.column:active .arrowbtnleft i.fa.fa-chevron-circle-right {
+  color: #ed1c24;
+}
+.tabstatus .tab-pane .float-left {
+  position: relative;
+}
+.tabstatus .tab-pane .float-left:after {
+  content: "";
+  border-right: solid 2px #000;
+  width: 1px;
+  height: 55px;
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 134px;
+  margin: 0 auto;
+  top: 0;
+}
+h3.font38.zipsize {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 18px;
+  line-height: 30px;
+}
+.zipmg {
+  padding-top: 10px;
+}
+#mainproduct_Collapse .column a {
+  color: #000;
+}
+#mainproduct_Collapse .column p.playbutton {
+  position: absolute;
+  bottom: -7px;
+}
+
+/*--===================================end main_product css===================================--*/

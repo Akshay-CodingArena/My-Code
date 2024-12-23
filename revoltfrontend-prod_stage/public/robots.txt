@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /track-revolt
+Disallow: /dealers
+
+Sitemap: https://www.revoltmotors.com/sitemap.xml
